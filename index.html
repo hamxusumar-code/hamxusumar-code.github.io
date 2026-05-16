@@ -1,22 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hamza's Diplomacy Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Umar | IRS Technology Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
-        .container { background: white; margin: 50px auto; padding: 20px; width: 60%; border-radius: 10px; box-shadow: 0px 0px 10px gray; }
-        h1 { color: #006633; } /* North-Eastern University Green */
-        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #006633; color: white; border: none; border-radius: 5px; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-style: italic;
+            color: #cfd8dc;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .intro-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .section-title {
+            color: #002244;
+            border-bottom: 2px solid #006633;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #006633;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #006633;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #004d26;
+        }
+        .btn-alt {
+            background-color: #002244;
+        }
+        .btn-alt:hover {
+            background-color: #001122;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
+    <div class="header">
+        <h1>HAMXUS DIGITAL DIPLOMACY LAB</h1>
+        <p>Bridging Software Development with International Relations & Security</p>
+    </div>
+
     <div class="container">
-        <h1>Welcome to Hamza Umar's IRS Portfolio</h1>
-        <p>I am a student of International Relations at North-Eastern University, Gombe.</p>
-        <p>This is where I will host my Python apps and Diplomacy reports.</p>
-        
-        <button onclick="alert('In-shaa Allah, my first app will be here soon!')">View My Apps</button>
+        <div class="intro-card">
+            <h2>Welcome to My IRS Technology Portfolio</h2>
+            <p>I am a student of International Relations and Security (IRS) at <strong>North-Eastern University, Gombe</strong>. This platform showcases desktop tools and applications designed to optimize crisis analysis, data logging, and academic research.</p>
+        </div>
+
+        <h2 class="section-title">Available Software Applications</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Diplomatic Conflict Analyzer</h3>
+                    <p>An intelligence assistant utilizing logical combinations to determine situational risk factors. Generates downloadable live stability logs and real-time alerts based on regional border status and ongoing trade negotiations.</p>
+                </div>
+                <a href="analyzer.py" download class="btn">Download Script (.py)</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>IRS Terminology Glossary</h3>
+                    <p>A fast dictionary engine leveraging structured data storage to instantaneously look up key political terms, state sovereignty definitions, and institutional framework documentation.</p>
+                </div>
+                <a href="glossary.py" download class="btn">Download Script (.py)</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h3>Get the Entire Suite Control Panel</h3>
+            <p>Download the master center dashboard file to operate both utilities simultaneously inside a single graphical screen environment.</p>
+            <a href="main.py" download class="btn btn-alt">Download Master Control Panel (main.py)</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Developed by Hamza Umar &copy; 2026 | Powered by GitHub Actions
     </div>
 
 </body>
